@@ -1,0 +1,503 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bodyHeader {
+    width: 100%;
+    height: 5rem;
+    background-color: white;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 99;
+    border-bottom: 0.1rem solid black;
+}
+
+.blocoImag {
+    width: 10%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blocoDentroDoBodyHeader{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blocoImag img {
+    width: 60px;
+    height: 60px;
+}
+
+.bodyHeader a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    margin: 0rem 1rem;
+    transition: 0.3s ease-in-out;
+}
+
+.espacoBlocoLinks {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.bodyHeader a:hover {
+    color: blue;
+}
+
+.btnEncaminharParaLogin {
+    width: 9rem;
+    height: 2.5rem;
+    background-color: black;
+    cursor: pointer;
+    border: 0;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+.mensagemDeInicio {
+    width: 100%;
+    height: auto;
+    padding: 10rem 25% 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.mensagemDeInicio h1 {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+}
+
+.mensagemDeInicio p {
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+}
+
+.imagemEBtnVerMais {
+    position: relative;
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("./Assets/imagemApresentacao.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.imagemEBtnVerMais::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(4px);
+    z-index: 1;
+}
+
+.imagemEBtnVerMais > * {
+    position: relative;
+    z-index: 2;
+}
+
+#btnRegisterApresentacao {
+    width: 9rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    border: 0;
+    color: black;
+    background-color: #E9B52E;
+    cursor: pointer;
+    z-index: 2;
+    margin: 2rem 0rem;
+    transition: 0.3s ease-in-out;
+    font-size: 1rem;
+}
+
+#btnRegisterApresentacao:hover {
+    font-size: 1.1rem;
+}
+
+#textSubApresentacao {
+    width: auto;
+    height: auto;
+    font-size: 1.5rem;
+    color: white;
+    z-index: 2;
+    font-weight: 300;
+}
+
+#linkVerMais {
+    width: auto;
+    height: auto;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in-out;
+    font-size: 1.1rem;
+}
+
+.blocoNovoVisualInfo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.blocoTituloVisual {
+    width: 75%;
+    height: auto;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    text-align: start;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.blocoTituloVisual p{
+    font-weight: 300;
+}
+
+.blocoNovoVisualInfo {
+    padding: 2rem 0rem;
+}
+
+.bodyCard {
+    width: 75%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: start;
+    justify-content: center;
+    margin: 2rem 0rem 3rem;
+}
+
+.card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+}
+
+.card img {
+    width: 70px;
+    height: 70px;
+    border-radius: 0.5rem;
+}
+
+.textApresentacaoCard{
+    padding: 0rem 1rem;
+    text-align: start;
+}
+
+.textApresentacaoCard h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.5rem 0rem 0rem;
+}
+
+.textApresentacaoCard p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.blocoSegundosCads{
+    width: 75%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.cardSegundo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.cardSegundoImagemDois{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.espacoImagem{
+    width: 45%;
+    height: auto;
+}
+
+#imagemSubCards{
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.descricaoCardSegundo{
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    text-align: start;
+    flex-direction: column;
+    padding-left: 1rem;
+}
+
+.descricaoCardSegundoCard{
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    text-align: end;
+    flex-direction: column;
+    padding-right: 1rem;
+}
+
+.blocoSobreOqueOferecemos{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0rem;
+}
+
+#imagemParaOqueOferecemos{
+    width: 50%;
+    border-radius: 0rem 15rem 15rem 0rem;
+}
+
+.espacoParaImagemETexto{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    text-align: center;
+    padding: 0rem 3rem;
+}
+
+.bodyArcodios{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 3rem 0rem;
+}
+
+.espacoParaArcodios{
+    width: 75%;
+    height: 100%;
+    padding: 2rem 0rem;
+}
+
+.bodyContato{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0rem;
+}
+
+.espacosInputs{
+    width: 75%;
+    height: auto;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    text-align: start;
+}
+
+#inputBlocoContato{
+    width: 100%;
+    height: 3rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border: 0.1rem black solid;
+    border-radius: 0.3rem;
+}
+
+.form-floating label{
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#blocoFormulario{
+    margin-top: 0.3rem;
+}
+
+#btnEnviarContato{
+    background-color: black;
+    border: 0;
+}
+
+@media (max-width: 800px) {
+    .blocoDentroDoBodyHeader{
+        width: 100%;
+        justify-content: space-around;
+    }
+    
+    .blocoImag img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .bodyHeader a {
+        font-size: 1rem;
+        margin: 0rem 0.5rem;
+    }
+    
+    .espacoBlocoLinks {
+        width: 60%;
+        height: 100%;
+    }
+
+    .btnEncaminharParaLogin {
+        width: 6rem;
+    }
+
+    .mensagemDeInicio {
+        padding: 10rem 10% 5rem;
+    }
+
+    .mensagemDeInicio h1{
+        font-size: 1.5rem;
+    }
+
+    .mensagemDeInicio p {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+    #textSubApresentacao {
+    font-size: 1.2rem;
+    margin: 0rem 2rem;
+    }
+
+    .bodyCard{
+        width: 90%;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .blocoSegundosCads{
+        width: 100%;
+    }
+
+    .cardSegundo{
+        flex-direction: column;
+    }
+
+    .cardSegundoImagemDois{
+        flex-direction: column-reverse;
+    }
+    
+    .espacoImagem{
+        width: 90%;
+    }
+
+    .descricaoCardSegundo{
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        padding-left: 0;
+        margin-top: 1rem;
+    }
+
+    .descricaoCardSegundoCard{
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        padding-left: 0;
+        margin-top: 1rem;
+    }
+
+    .blocoSobreOqueOferecemos{
+        flex-direction: column;
+    }
+
+    #imagemParaOqueOferecemos{
+        width: 90%;
+        border-radius: 0.5rem;
+    }
+
+    .espacoParaImagemETexto{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .bodyArcodios{
+        text-align: center;
+    }
+
+    .espacosInputs{
+        width: 90%;
+    }
+
+    .espacoParaTitulos{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
