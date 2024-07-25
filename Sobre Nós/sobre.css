@@ -86,7 +86,8 @@ body {
 }
 
 .espacoImagem1 img{
-    width: 80%;
+    width: 900px;
+    height: 200px;
     height: auto;
     margin-top: 4rem;
     border-radius: 0.5rem;
@@ -119,7 +120,7 @@ body {
 }
 
 .espacoImagem2 img{
-    width: 50%;
+    width: 30%;
     height: auto;
     margin-top: 4rem;
     border-radius: 0.5rem;
@@ -155,26 +156,28 @@ footer{
     .espacoImagem1 img{
         width: 80%;
         height: auto;
-        margin-top: 2rem;
         border-radius: 0.5rem;
+        margin-top: 1rem;
     }
 
     .espacoImagem2{
-        flex-direction: column-reverse;
+        flex-direction: column;
         margin-top: 1rem;
+        justify-content: start;
     }
     
     .espacoTitulo2{
         width: 100%;
         height: auto;
-        padding: 2rem 1rem;
+        padding: 2rem 1rem 0rem;
+        margin-top: 5rem;
     }
 
     .espacoImagem2 img{
-        width: 80%;
+        width: 100%;
         height: auto;
-        margin-top: 4rem;
-        border-radius: 0.5rem;
+        margin: 0;
+        padding: 0;
     }
 }
 
