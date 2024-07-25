@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 body {
@@ -16,39 +16,39 @@ body {
 
 .bodyHeader {
     width: 100%;
-    height: 5rem;
+    height: auto;
     background-color: white;
     top: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: fixed;
-    z-index: 99;
-    border-bottom: 0.1rem solid black;
-}
+    flex-direction: column;
 
+}
 .blocoImag {
-    width: 10%;
+    width: 100%;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.blocoDentroDoBodyHeader{
-    width: 75%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    margin-top: 3rem;
 }
 
 .blocoImag img {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
 }
 
-.bodyHeader a {
+.espacoLinks {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem 0rem 3rem;
+}
+
+.espacoLinks a {
     text-decoration: none;
     color: black;
     font-size: 1.2rem;
@@ -56,48 +56,8 @@ body {
     transition: 0.3s ease-in-out;
 }
 
-.espacoBlocoLinks {
-    width: 70%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-}
-
 .bodyHeader a:hover {
     color: blue;
-}
-
-.btnEncaminharParaLogin {
-    width: 9rem;
-    height: 2.5rem;
-    background-color: black;
-    cursor: pointer;
-    border: 0;
-    font-size: 1rem;
-    border-radius: 0.5rem;
-    color: white;
-}
-
-.mensagemDeInicio {
-    width: 100%;
-    height: auto;
-    padding: 10rem 25% 12rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-}
-
-.mensagemDeInicio h1 {
-    margin-top: 1rem;
-    font-size: 2.5rem;
-}
-
-.mensagemDeInicio p {
-    font-size: 1.2rem;
-    margin-top: 1.2rem;
 }
 
 .imagemEBtnVerMais {
@@ -108,7 +68,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: url("./Assets/imagemApresentacao.jpg");
+    background-image: url("./Assets/fotoParaVerMais.jpeg");
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -155,7 +115,7 @@ body {
     font-size: 1.5rem;
     color: white;
     z-index: 2;
-    font-weight: 300;
+    font-weight: bold;
 }
 
 #linkVerMais {
@@ -340,48 +300,22 @@ body {
     padding: 2rem 0rem;
 }
 
-.bodyContato{
+footer{
     width: 100%;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 2rem 0rem;
-}
+    text-align: center;
+    padding: 2rem 2rem 1.5rem 2rem;
+    color: white;
+    background-color: #2D2D2D;
+ }
 
-.espacosInputs{
-    width: 75%;
-    height: auto;
-    display: flex;
-    align-items: start;
-    justify-content: start;
-    flex-direction: column;
-    text-align: start;
-}
-
-#inputBlocoContato{
-    width: 100%;
-    height: 3rem;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    outline: none;
-    border: 0.1rem black solid;
-    border-radius: 0.3rem;
-}
-
-.form-floating label{
-    margin-left: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-
-#blocoFormulario{
-    margin-top: 0.3rem;
-}
-
-#btnEnviarContato{
-    background-color: black;
-    border: 0;
-}
+ .mensagemFooter{
+    font-size: 15px;
+    font-weight: bold;
+ }
 
 @media (max-width: 800px) {
     .blocoDentroDoBodyHeader{

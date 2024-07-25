@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bodyHeader {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.blocoImag {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.blocoImag img {
+    width: 70px;
+    height: 70px;
+}
+
+.espacoLinks {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem 0rem 1rem;
+}
+
+.espacoLinks a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    margin: 0rem 1rem;
+    transition: 0.3s ease-in-out;
+}
+
+.bodyHeader a:hover {
+    color: blue;
+}
+
+.bodyContato{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0rem;
+}
+
+.espacosInputs{
+    width: 75%;
+    height: auto;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    text-align: start;
+}
+
+#inputBlocoContato{
+    width: 100%;
+    height: 3rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border: 0.1rem black solid;
+    border-radius: 0.3rem;
+}
+
+.form-floating label{
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#blocoFormulario{
+    margin-top: 0.3rem;
+}
+
+#btnEnviarContato{
+    width: 8rem;
+    height: 2.5rem;
+    background-color: black;
+    border: 0;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 2rem 1.5rem 2rem;
+    color: white;
+    background-color: #2D2D2D;
+ }
+
+ .mensagemFooter{
+    font-size: 15px;
+    font-weight: bold;
+ }
+
+@media (max-width: 800px) {
+    .blocoDentroDoBodyHeader{
+        width: 100%;
+        justify-content: space-around;
+    }
+    
+    .blocoImag img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .bodyHeader a {
+        font-size: 1rem;
+        margin: 0rem 0.5rem;
+    }
+    
+    .espacoBlocoLinks {
+        width: 60%;
+        height: 100%;
+    }
+
+    .btnEncaminharParaLogin {
+        width: 6rem;
+    }
+
+    .mensagemDeInicio {
+        padding: 10rem 10% 5rem;
+    }
+
+    .mensagemDeInicio h1{
+        font-size: 1.5rem;
+    }
+
+    .mensagemDeInicio p {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+    #textSubApresentacao {
+    font-size: 1.2rem;
+    margin: 0rem 2rem;
+    }
+
+    .bodyCard{
+        width: 90%;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .blocoSegundosCads{
+        width: 100%;
+    }
+
+    .cardSegundo{
+        flex-direction: column;
+    }
+
+    .cardSegundoImagemDois{
+        flex-direction: column-reverse;
+    }
+    
+    .espacoImagem{
+        width: 90%;
+    }
+
+    .descricaoCardSegundo{
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        padding-left: 0;
+        margin-top: 1rem;
+    }
+
+    .descricaoCardSegundoCard{
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        padding-left: 0;
+        margin-top: 1rem;
+    }
+
+    .blocoSobreOqueOferecemos{
+        flex-direction: column;
+    }
+
+    #imagemParaOqueOferecemos{
+        width: 90%;
+        border-radius: 0.5rem;
+    }
+
+    .espacoParaImagemETexto{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .bodyArcodios{
+        text-align: center;
+    }
+
+    .espacosInputs{
+        width: 90%;
+    }
+
+    .espacoParaTitulos{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
