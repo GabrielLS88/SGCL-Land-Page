@@ -95,7 +95,7 @@ body {
 .espacoImagem2{
     width: 100%;
     height: auto;
-    margin-top: 7rem;
+    margin: 7rem 0rem;
     display: flex;
     align-items: center;
     justify-content: center;
