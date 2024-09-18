@@ -4,3 +4,12 @@ function scrollToSection(sectionId) {
         section.scrollIntoView({ behavior: 'smooth' });
     }
 }
+
+const header = document.getElementById("bodyHeader");
+window.addEventListener("scroll", function() {
+    if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+});
