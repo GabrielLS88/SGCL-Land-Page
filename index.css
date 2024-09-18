@@ -421,5 +421,13 @@ footer{
         flex-direction: column;
         text-align: center;
     }
+
+    .espacoLinks {
+        width: 60%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 

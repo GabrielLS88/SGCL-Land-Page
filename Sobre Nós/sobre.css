@@ -76,7 +76,7 @@ body {
     align-items: center;
     text-align: center;
     flex-direction: column;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .espacoTitulo1{
@@ -94,10 +94,10 @@ body {
 }
 
 .espacoImagem1 img{
-    width: 950px;
+    width: 72%;
     height: 200px;
     height: auto;
-    margin-top: 4rem;
+    margin-top: 2rem;
     border-radius: 0.5rem;
 }
 
@@ -321,9 +321,16 @@ footer{
         width: 90%;
         height: auto;
         display: flex;
-        align-items: start;
-        justify-content: start;
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
+        text-align: center;
+    }
+
+    .espacoNossosDiferenciais{
+        width: 100%;
+        height: auto;
+        text-align: center;
     }
     
     .espacoMensagemEImagem{
@@ -346,6 +353,7 @@ footer{
         align-items: center;
         justify-content: center;
         padding: 0rem 2rem;
+        text-align: center;
     }
     
     .espacoImagemCultura{
@@ -357,7 +365,7 @@ footer{
     }
     
     .espacoImagemCultura img{
-        width: 300px;
+        width: 400px;
         border-radius: 0px 0px 10px 10px;
         margin-top: 10%;
     }
@@ -385,16 +393,27 @@ footer{
 
     .imagensDiferencas{
         padding: 2rem 0rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .imagensDiferencas img{
-        width: 300px;
-        height: 350px;
+        width: 400px;
+        height: 450px;
         border-radius: 0.5rem;
     }
     
     .espacoTituloImagem{
         margin-top: 3rem;
+    }
+
+    .espacoLinks {
+        width: 60%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
