@@ -46,3 +46,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
   
+function redirecionarPageCadastro (){
+  window.location.href = "https://sgcl.com.br/"
+}
