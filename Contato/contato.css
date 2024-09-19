@@ -70,13 +70,29 @@ body {
 }
 
 .espacosInputs{
-    width: 75%;
+    width:100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: start;
+}
+
+.espacoParaTitulos{
+    width: 70%;
     height: auto;
     display: flex;
     align-items: start;
     justify-content: start;
     flex-direction: column;
     text-align: start;
+    padding: 0rem 1rem;
+}
+
+#campo_text_area{
+    height: 3rem;
+    max-height: 80px;
 }
 
 #inputBlocoContato{
@@ -105,6 +121,10 @@ body {
     border: 0;
 }
 
+#tituloContato{
+    font-size: 30px;
+}
+
 footer{
     width: 100%;
     height: auto;
@@ -115,7 +135,6 @@ footer{
     padding: 2rem 2rem 1.5rem 2rem;
     color: white;
     background-color: #2D2D2D;
-    margin-top: 1rem;
     position: fixed;
     bottom: 0;
  }
@@ -249,5 +268,11 @@ footer{
         align-items: center;
         justify-content: center;
     }
+
+    #campo_text_area{
+        height: 10rem;
+        max-height: 30rem;
+    }
+
 }
 

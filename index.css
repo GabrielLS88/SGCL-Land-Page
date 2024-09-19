@@ -226,17 +226,27 @@ body {
 #imagemParaOqueOferecemos{
     width: 50%;
     border-radius: 0rem 15rem 15rem 0rem;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
 }
 
 .espacoParaImagemETexto{
     width: 50%;
     height: 100%;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: start;
     flex-direction: column;
-    text-align: center;
+    text-align: start;
     padding: 0rem 3rem;
+}
+
+.hidden {
+    opacity: 0;
+  }
+
+#titulo_oque_oferecemos{
+    text-align: start;
 }
 
 .bodyArcodios{

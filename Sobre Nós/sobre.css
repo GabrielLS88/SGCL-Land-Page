@@ -95,10 +95,11 @@ body {
 
 .espacoImagem1 img{
     width: 72%;
-    height: 200px;
+    height: 150px;
     height: auto;
     margin-top: 2rem;
     border-radius: 0.5rem;
+    object-fit: cover;
 }
 
 .espacoImagem2{
@@ -112,7 +113,7 @@ body {
 }
 
 .espacoTitulo2{
-    width: 50%;
+    width: 60%;
     height: auto;
     display: flex;
     align-items: center;
@@ -128,15 +129,17 @@ body {
 }
 
 .espacoImagem2 img{
-    width: 40%;
+    width: 30%;
     height: auto;
     margin-top: 4rem;
     border-radius: 0.5rem;
+    object-fit: cover;
 }
 
 .bodyCarrosel{
     width: 100%;
     height: auto;
+    justify-content: end;
     padding: 2rem 14%;
 }
 
@@ -174,12 +177,12 @@ body {
     margin-top: 0.5rem;
 }
 
-.imagensDiferencas img{
+.imagensDiferencas img {
     width: 320px;
     height: 380px;
     border-radius: 0.5rem;
+    object-fit: cover;
 }
-
 .espacoImagensDiferencas{
     width: 100%;
     height: auto;
