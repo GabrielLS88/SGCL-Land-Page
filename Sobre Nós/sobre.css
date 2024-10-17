@@ -14,7 +14,6 @@ body {
     flex-direction: column;
 }
 
-
 .bodyHeader {
     width: 100%;
     height: auto;
@@ -26,6 +25,7 @@ body {
     position: sticky;
     z-index: 99;
 }
+
 .blocoImag {
     width: 30%;
     height: auto;
@@ -69,50 +69,41 @@ body {
     font-size: 1.1rem;
 }
 
-.espacoImagem1{
+.espacoImagem1, .espacoTitulo1 {
     width: 100%;
     height: auto;
     display: flex;
     align-items: center;
     text-align: center;
     flex-direction: column;
+    padding: 0 10%; /* Adiciona padding lateral */
     margin-top: 2rem;
 }
 
-.espacoTitulo1{
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-}
-
-.espacoTitulo1 h1{
+.espacoTitulo1 h1 {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.espacoImagem1 img{
-    width: 72%;
-    height: 150px;
-    height: auto;
-    margin-top: 2rem;
+.espacoImagem1 img {
+    width: 90%;
+    height:500px;
     border-radius: 0.5rem;
     object-fit: cover;
+    margin-top: 2rem;
 }
 
-.espacoImagem2{
+.espacoImagem2 {
     width: 100%;
     height: auto;
-    margin: 7rem 0rem;
+    margin: 7rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0rem 10%;
+    padding: 0 10%;
 }
 
-.espacoTitulo2{
+.espacoTitulo2 {
     width: 60%;
     height: auto;
     display: flex;
@@ -122,13 +113,13 @@ body {
     padding: 2rem;
 }
 
-.espacoTitulo2 h1{
+.espacoTitulo2 h1 {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
 }
 
-.espacoImagem2 img{
+.espacoImagem2 img {
     width: 30%;
     height: auto;
     margin-top: 4rem;
@@ -136,35 +127,55 @@ body {
     object-fit: cover;
 }
 
-.bodyCarrosel{
-    width: 100%;
-    height: auto;
-    justify-content: end;
-    padding: 2rem 14%;
-}
-
-.espacoNossosDiferenciais{
-    width: 100%;
-    height: auto;
-}
-
-.imagensDiferencas{
+.bodyCarrosel {
     width: 100%;
     height: auto;
     display: flex;
     align-items: center;
-    justify-content: start;
-    padding: 0.5rem;
-    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 0;
 }
 
-.espacoTituloImagem{
+.espacodivsImagens{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.espacoNossosDiferenciais {
+    width: 72%;
+    height: auto;
+}
+
+.imagensDiferencas {
+    width:auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.espaco_para_imagens{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin-top: 2rem;
+}
+
+.espacoTituloImagem {
     width: 50%;
     height: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    left: 0;
     top: 0;
     background-color: white;
     color: black;
@@ -172,37 +183,63 @@ body {
     border-radius: 0rem 0.5rem 0.5rem 0rem;
 }
 
-.espacoTituloImagem h1{
+.espacoTituloImagem h1 {
     font-size: 1rem;
     margin-top: 0.5rem;
 }
 
 .imagensDiferencas img {
-    width: 320px;
-    height: 380px;
+    width: 380px;
+    height: 440px;
     border-radius: 0.5rem;
     object-fit: cover;
 }
-.espacoImagensDiferencas{
-    width: 100%;
+
+.imagensDiferencasTerceiraImagem {
+    width: auto;
     height: auto;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: start;
+    justify-content: start;
+  
 }
 
-.espacoMensagemEImagem{
+.imagemContainer {
+    width: auto;
+    height: 440px;/* Metade da altura da imagem */
+    overflow: hidden; /* Esconde a parte da imagem que está fora do contêiner */
+    position: relative; /* Para permitir o uso de transformações na imagem */
+}
+
+#imagemTerceiraDoCarrocel {
+    width: 280px;
+    height: 440px;
+    object-fit: cover; /* Para garantir que a imagem se encaixe bem no contêiner */
+    right: -9px; /* Move a imagem para cima para exibir a parte superior */
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+
+.espacoImagensDiferencas {
+    width: 86%;
+    height: auto;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.espacoMensagemEImagem {
     width: 90%;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #F3F3F3 ;
+    background-color: #F3F3F3;
     border-radius: 10px;
-    margin-top: 1rem;
+
 }
 
-.bodyCultura{
+.bodyCultura {
     width: 100%;
     height: auto;
     padding: 2rem 10%;
@@ -210,10 +247,10 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 4rem 0rem;
+    margin: 4rem 0;
 }
 
-.espacoTituloCultura{
+.espacoTituloCultura {
     width: 90%;
     height: auto;
     display: flex;
@@ -222,7 +259,7 @@ body {
     flex-direction: column;
 }
 
-.espacoTextoImagemCultura{
+.espacoTextoImagemCultura {
     width: 80%;
     height: 100%;
     display: flex;
@@ -231,20 +268,20 @@ body {
     padding: 0rem 2rem;
 }
 
-.espacoImagemCultura{
-    width:30%; 
+.espacoImagemCultura {
+    width: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.espacoImagemCultura img{
+.espacoImagemCultura img {
     width: 300px;
     border-radius: 200px 10px 10px 200px;
 }
 
-.subBlocoImagem{
-    width: 300px ;
+.subBlocoImagem {
+    width: 300px;
     height: auto;
     position: absolute;
     background-color: black;
@@ -255,7 +292,7 @@ body {
     border-radius: 30px 0px 0px 30px;
 }
 
-footer{
+footer {
     width: 100%;
     height: auto;
     display: flex;
@@ -265,64 +302,60 @@ footer{
     padding: 2rem 2rem 1.5rem 2rem;
     color: white;
     background-color: #2D2D2D;
- }
+}
 
- .mensagemFooter{
+.mensagemFooter {
     font-size: 15px;
     font-weight: bold;
- }
+}
 
 @media (max-width: 800px) {
-
-    .espacoTitulo1{
-        padding: 0rem 1rem;
+    .espacoTitulo1 {
+        padding: 0 1rem;
     }
-    .espacoTitulo1 h1{
+    .espacoTitulo1 h1 {
         font-size: 1.2rem;
         font-weight: bold;
     }
 
-    .espacoImagem1 img{
+    .espacoImagem1 img {
         width: 80%;
-        height: auto;
         border-radius: 0.5rem;
         margin-top: 1rem;
     }
 
-    .espacoImagem2{
+    .espacoImagem2 {
         flex-direction: column;
         margin-top: 1rem;
         justify-content: start;
+        padding: 0 10%; /* Adiciona padding lateral */
     }
-    
-    .espacoTitulo2{
+
+    .espacoTitulo2 {
         width: 100%;
         height: auto;
-        padding: 2rem 1rem 0rem;
+        padding: 2rem 1rem 0;
         margin-top: 5rem;
     }
 
-    .espacoImagem2 img{
+    .espacoImagem2 img {
         width: 100%;
-        height: auto;
         margin: 0;
         padding: 0;
     }
 
-    .bodyCultura{
+    .bodyCultura {
         width: 100%;
-        height: auto;
         padding: 2rem 10%;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        margin: 4rem 0rem;
+        margin: 4rem 0;
     }
-    
-    .espacoTituloCultura{
+
+    .espacoTituloCultura {
         width: 90%;
-        height: auto;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -330,26 +363,24 @@ footer{
         text-align: center;
     }
 
-    .espacoNossosDiferenciais{
+    .espacoNossosDiferenciais {
         width: 100%;
-        height: auto;
         text-align: center;
     }
-    
-    .espacoMensagemEImagem{
+
+    .espacoMensagemEImagem {
         width: 94%;
-        height: auto;
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #F3F3F3 ;
-        border-radius: 10px 10px  0px 10px;
+        background-color: #F3F3F3;
+        border-radius: 10px 10px 0px 10px;
         margin-top: 1rem;
         flex-direction: column;
-        padding: 1rem 0rem;
+        padding: 1rem 0;
     }
-    
-    .espacoTextoImagemCultura{
+
+    .espacoTextoImagemCultura {
         width: 80%;
         height: 100%;
         display: flex;
@@ -358,23 +389,23 @@ footer{
         padding: 0rem 2rem;
         text-align: center;
     }
-    
-    .espacoImagemCultura{
-        width:30%; 
+
+    .espacoImagemCultura {
+        width: 30%;
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    
-    .espacoImagemCultura img{
+
+    .espacoImagemCultura img {
         width: 400px;
         border-radius: 0px 0px 10px 10px;
         margin-top: 10%;
     }
-    
-    .subBlocoImagem{
-        width: 300px ;
+
+    .subBlocoImagem {
+        width: 300px;
         height: auto;
         position: absolute;
         background-color: black;
@@ -382,10 +413,10 @@ footer{
         align-items: center;
         justify-content: center;
         padding: 0.3rem;
-        border-radius: 0px 0px 0px 0px;
+        border-radius: 0px;
     }
 
-    .espacoImagensDiferencas{
+    .espacoImagensDiferencas {
         width: 100%;
         height: auto;
         display: flex;
@@ -394,20 +425,20 @@ footer{
         flex-direction: column;
     }
 
-    .imagensDiferencas{
-        padding: 2rem 0rem;
+    .imagensDiferencas {
+        padding: 2rem 0;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .imagensDiferencas img{
+    .imagensDiferencas img {
         width: 400px;
         height: 450px;
         border-radius: 0.5rem;
     }
-    
-    .espacoTituloImagem{
+
+    .espacoTituloImagem {
         margin-top: 3rem;
     }
 
@@ -419,4 +450,3 @@ footer{
         justify-content: center;
     }
 }
-
