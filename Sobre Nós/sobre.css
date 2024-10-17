@@ -320,7 +320,7 @@ footer {
     }
 
     .espacoImagem1 img {
-        width: 80%;
+        width: 100%;
         border-radius: 0.5rem;
         margin-top: 1rem;
     }
@@ -367,6 +367,7 @@ footer {
     .espacoNossosDiferenciais {
         width: 100%;
         text-align: center;
+        padding: 0rem 5rem;
     }
 
     .espacoMensagemEImagem {
@@ -416,8 +417,15 @@ footer {
         border-radius: 0px;
     }
 
+    .imagensDiferencasTerceiraImagem,.imagemContainer{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     #imagemTerceiraDoCarrocel {
-        width: 280px;
+        width: 77%;
         height: 440px;
         object-fit: cover;
         right: -9px;
@@ -441,7 +449,7 @@ footer {
     }
 
     .imagensDiferencas img {
-        width: 280px;
+        width: 80%;
         height: 450px;
         border-radius: 0.5rem;
     }
