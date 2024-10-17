@@ -439,5 +439,9 @@ footer{
         align-items: center;
         justify-content: center;
     }
+
+    .espacoLinks a{
+        text-align: center;
+    }
 }
 

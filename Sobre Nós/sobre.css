@@ -399,13 +399,13 @@ footer {
     }
 
     .espacoImagemCultura img {
-        width: 400px;
+        width: 325px;
         border-radius: 0px 0px 10px 10px;
         margin-top: 10%;
     }
 
     .subBlocoImagem {
-        width: 300px;
+        width: 325px;
         height: auto;
         position: absolute;
         background-color: black;
@@ -414,6 +414,14 @@ footer {
         justify-content: center;
         padding: 0.3rem;
         border-radius: 0px;
+    }
+
+    #imagemTerceiraDoCarrocel {
+        width: 280px;
+        height: 440px;
+        object-fit: cover;
+        right: -9px;
+        border-radius: 0.5rem;
     }
 
     .espacoImagensDiferencas {
@@ -433,7 +441,7 @@ footer {
     }
 
     .imagensDiferencas img {
-        width: 400px;
+        width: 280px;
         height: 450px;
         border-radius: 0.5rem;
     }
@@ -448,5 +456,9 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .espacoLinks a{
+        text-align: center;
     }
 }

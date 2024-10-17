@@ -274,5 +274,8 @@ footer{
         max-height: 30rem;
     }
 
+    .espacoLinks a{
+        text-align: center;
+    }
 }
 
